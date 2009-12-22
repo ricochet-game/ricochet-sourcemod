@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "13"
+	"mapversion" "14"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "13"
+	"mapversion" "14"
 	"classname" "worldspawn"
 	"skyname" "sky_rico_space_02"
 	"maxpropscreenwidth" "-1"
@@ -788,82 +788,6 @@ world
 		{
 			"color" "220 220 220"
 			"groupid" "2532"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
-		"id" "4006"
-		side
-		{
-			"id" "732"
-			"plane" "(759 509 92) (1343 509.002 92) (1343 516.999 92)"
-			"material" "HALFLIFE/BLACK"
-			"uaxis" "[-1 0 0 30.4875] 3.3"
-			"vaxis" "[0 1 0 -12.9784] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "731"
-			"plane" "(1343 509.002 111) (759 509 111) (759.001 517.002 111)"
-			"material" "HALFLIFE/BLACK"
-			"uaxis" "[-1 0 0 30.4875] 3.3"
-			"vaxis" "[0 1 0 -28.9784] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "730"
-			"plane" "(759 517.001 92) (1343 516.998 92) (1343 516.998 111)"
-			"material" "MODELS/DEFLECTOR"
-			"uaxis" "[-1 0 0 62.4869] 3.3"
-			"vaxis" "[0 0 -1 92] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "729"
-			"plane" "(1343 509.002 92) (759.001 509 92) (759.001 509 111)"
-			"material" "MODELS/DEFLECTOR"
-			"uaxis" "[-1 0 0 62.4869] 3.3"
-			"vaxis" "[0 0 -1 92] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "728"
-			"plane" "(1343 516.999 92) (1343 509.002 92) (1343 509.002 111)"
-			"material" "MODELS/DEFLECTOR"
-			"uaxis" "[0 -1 0 -99.3401] 3.3"
-			"vaxis" "[0 0 -1 92] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "727"
-			"plane" "(759.001 509 92) (759.001 517.003 92) (759.001 517.003 111)"
-			"material" "MODELS/DEFLECTOR"
-			"uaxis" "[0 -1 0 -99.3401] 3.3"
-			"vaxis" "[0 0 -1 92] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 227 148"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -6004,6 +5928,100 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "4372"
+	"classname" "trigger_push"
+	"StartDisabled" "0"
+	"pushdir" "0 0 0"
+	"speed" "100"
+	"alternateticksfix" "0"
+	"spawnflags" "1"
+	"origin" "1051 513 110"
+	solid
+	{
+		"id" "4006"
+		side
+		{
+			"id" "960"
+			"plane" "(759 509 108) (1343 509.002 108) (1343 516.999 108)"
+			"material" "HALFLIFE/BLACK"
+			"uaxis" "[-1 0 0 30.4875] 3.3"
+			"vaxis" "[0 1 0 -12.9784] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "959"
+			"plane" "(1343 509.002 112) (759 509 112) (759.001 517.002 112)"
+			"material" "HALFLIFE/BLACK"
+			"uaxis" "[-1 0 0 30.4875] 3.3"
+			"vaxis" "[0 1 0 -28.9784] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "958"
+			"plane" "(759 517.001 108) (1343 516.998 108) (1343 516.998 112)"
+			"material" "MODELS/DEFLECTOR"
+			"uaxis" "[-1 0 0 62.4869] 3.3"
+			"vaxis" "[0 0 -1 92] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "957"
+			"plane" "(1343 509.002 108) (759.001 509 108) (759.001 509 112)"
+			"material" "MODELS/DEFLECTOR"
+			"uaxis" "[-1 0 0 62.4869] 3.3"
+			"vaxis" "[0 0 -1 92] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "956"
+			"plane" "(1343 516.999 108) (1343 509.002 108) (1343 509.002 112)"
+			"material" "MODELS/DEFLECTOR"
+			"uaxis" "[0 -1 0 -99.3401] 3.3"
+			"vaxis" "[0 0 -1 92] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "955"
+			"plane" "(759.001 509 108) (759.001 517.003 108) (759.001 517.003 112)"
+			"material" "MODELS/DEFLECTOR"
+			"uaxis" "[0 -1 0 -99.3401] 3.3"
+			"vaxis" "[0 0 -1 92] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5500]"
 	}
 }
 cameras
