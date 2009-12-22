@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "14"
+	"mapversion" "15"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "14"
+	"mapversion" "15"
 	"classname" "worldspawn"
 	"skyname" "sky_rico_space_02"
 	"maxpropscreenwidth" "-1"
@@ -1016,7 +1016,7 @@ entity
 	"classname" "info_target"
 	"targetname" "b_1"
 	"angles" "0 0 0"
-	"origin" "1113 49 71"
+	"origin" "1014 70 71"
 	editor
 	{
 		"color" "220 30 220"
@@ -3308,7 +3308,7 @@ entity
 	"height" "200"
 	"ispyramid" "1"
 	"spawnflags" "1"
-	"origin" "512 1158.5 224"
+	"origin" "512 1186 224"
 	"target" "n_3"
 	solid
 	{
@@ -3316,7 +3316,7 @@ entity
 		side
 		{
 			"id" "648"
-			"plane" "(444 1161 292) (580 1161 292) (580 1156 292)"
+			"plane" "(444 1156 292) (444 1216 292) (580 1216 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -3327,7 +3327,7 @@ entity
 		side
 		{
 			"id" "647"
-			"plane" "(444 1156 156) (580 1156 156) (580 1161 156)"
+			"plane" "(444 1216 156) (444 1156 156) (580 1156 156)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -3338,7 +3338,7 @@ entity
 		side
 		{
 			"id" "646"
-			"plane" "(444 1161 292) (444 1156 292) (444 1156 156)"
+			"plane" "(444 1156 156) (444 1216 156) (444 1216 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3349,7 +3349,7 @@ entity
 		side
 		{
 			"id" "645"
-			"plane" "(580 1161 156) (580 1156 156) (580 1156 292)"
+			"plane" "(580 1216 156) (580 1156 156) (580 1156 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3360,7 +3360,7 @@ entity
 		side
 		{
 			"id" "644"
-			"plane" "(580 1161 292) (444 1161 292) (444 1161 156)"
+			"plane" "(444 1216 156) (580 1216 156) (580 1216 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3736,7 +3736,7 @@ entity
 	"height" "200"
 	"ispyramid" "1"
 	"spawnflags" "1"
-	"origin" "1627 -64.49 224"
+	"origin" "1627 -91.88 224"
 	"target" "n_4"
 	solid
 	{
@@ -3744,7 +3744,7 @@ entity
 		side
 		{
 			"id" "696"
-			"plane" "(1695 -67 292) (1559 -67 292) (1559 -62 292)"
+			"plane" "(1559 -122 292) (1559 -62 292) (1695 -62 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[-1 0 0 44] 0.25"
 			"vaxis" "[0 1 0 39.9988] 0.25"
@@ -3755,7 +3755,7 @@ entity
 		side
 		{
 			"id" "695"
-			"plane" "(1695 -62 156) (1559 -62 156) (1559 -67 156)"
+			"plane" "(1559 -62 156) (1559 -122 156) (1695 -122 156)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[-1 0 0 44] 0.25"
 			"vaxis" "[0 1 0 39.9988] 0.25"
@@ -3766,7 +3766,7 @@ entity
 		side
 		{
 			"id" "694"
-			"plane" "(1695 -67 292) (1695 -62 292) (1695 -62 156)"
+			"plane" "(1695 -62 156) (1695 -122 156) (1695 -122 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 -1 0 -39.9988] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3777,7 +3777,7 @@ entity
 		side
 		{
 			"id" "693"
-			"plane" "(1559 -67 156) (1559 -62 156) (1559 -62 292)"
+			"plane" "(1559 -122 156) (1559 -62 156) (1559 -62 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 -1 0 -39.9988] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3788,7 +3788,7 @@ entity
 		side
 		{
 			"id" "692"
-			"plane" "(1559 -67 292) (1695 -67 292) (1695 -67 156)"
+			"plane" "(1695 -122 156) (1559 -122 156) (1559 -122 292)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[-1 0 0 44] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
