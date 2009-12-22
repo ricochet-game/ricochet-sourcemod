@@ -1,0 +1,7 @@
+media/rsintro.avi
+
+//Keep in mind that the avi video will probably need be be encoded using the Cinepak codec. (XVid does not seem //to work) Also it is not known what other audio codecs are supported, other then Microsoft ADPCM.
+
+//If you want to suppress the startup videos, you can add the -novideo parameter to your Command Line.
+
+//DivX is also supported, however there appears to be a size limit to the startup video so if a video is not //played then its filesize is too large, this has been tested with an avi file over 100mb. 

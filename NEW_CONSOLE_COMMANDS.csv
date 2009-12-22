@@ -1,0 +1,7 @@
+Command/Variable,Scope,Type,Range,Description
+debug_trigger_jump,cheat,bool,"0 = false, 1 = true",Debugs the trigger_jump entity
+cl_playercolor_r,userinfo,integer,0-255,Sets the players red value
+cl_playercolor_g,userinfo,integer,0-255,Sets the players green value
+cl_playercolor_b,userinfo,integer,0-255,Sets the players blue value
+bot,server-only,command,<name> <skill> <personality>,Creates a bot
+mp_protectlimit,server-only,float(time),0-3.40282347e+38,Sets the spawn protection shield time limit

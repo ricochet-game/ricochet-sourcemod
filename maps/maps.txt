@@ -1,0 +1,8 @@
+Our first version (12.11.2007.1a) ships withs enabled 3 maps.
+
+rc_deathmatch 1 - finished
+rc_deathmatch 2 - Not completed due to Hammer problems. Fix at later date.
+rc_skyarena_TEST - Alpha. Not completed. New version out later.
+
+Check for updates at www.ricochet-source.com
+

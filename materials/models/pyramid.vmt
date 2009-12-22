@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/pyramid"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/pyramid_normal"
+	"$envmap" "env_cubemap"
+	"$Selfillum" "1"
+	"$envmapsaturation" 1
+}

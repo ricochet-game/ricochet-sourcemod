@@ -1,0 +1,131 @@
+//RICOCHET DISC WEAPON SOUNDS
+
+//Primary FIRE
+"WepDisc.Primary"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"		"Weapons/fire.wav"
+}
+
+//Secondary FIRE
+"WepDisc.Secondary"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"		"Weapons/altfire.wav"
+}
+
+
+//DISC SOUNDS
+
+//Ricochets
+"Disc.Ricochet"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_110dB"
+	"pitch"	"90, 110"
+	"rndwave"
+	{
+		"wave"	"Weapons/ricochet1.wav"
+		"wave"	"Weapons/ricochet2.wav"
+	}
+}
+
+//Hit a player
+"Disc.Hit"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"		"Weapons/dischit.wav"
+}
+
+//Hit skybox or disc return trigger
+"Disc.Return"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.95"
+	"soundlevel"	"SNDLVL_60dB"
+	"wave"		"Weapons/discreturn.wav"
+}
+
+//Teleported
+"Disc.Teleport"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.95"
+	"soundlevel"	"SNDLVL_90dB"
+	"wave"		"Items/r_tele1.wav"
+}
+
+//Powerup Sounds
+
+//Powerup appears
+"Powerup.Materialize"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_140dB"
+	"pitch"	"150"
+	"wave"		"Items/powerup.wav"
+}
+
+//JUMP TRIGGER Sounds
+
+"TrigJump.Bounce"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"		"Items/triggerjump.wav"
+}
+
+//PLAYER Sounds
+"RicPlayer.Spawn"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"		"player/pspawn.wav"
+}
+
+"RicPlayer.Decap"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_110dB"
+	"wave"		"player/decap.wav"
+}
+"RicPlayer.Scream1"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"		"player/scream1.wav"
+}
+"RicPlayer.Scream2"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"		"player/scream2.wav"
+}
+"RicPlayer.Scream3"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"		"player/scream3.wav"
+}
+
+
+
+
+
+
+
+

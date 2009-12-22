@@ -1,0 +1,89 @@
+//====== Copyright © 2006-2007, Christopher "RomeoJGuy" Harris, All rights reserved. =======
+//
+// Purpose: Ricochet Game Definition File (.fgd)
+// Version: 0.1e (This is the most up-to date version)
+// 
+//==========================================================================================
+
+//We want to include the Source base.fgd file to keep our file smaller and to remove clutter over
+//what entities are integral to ricochet map making.
+@include "ricbase.fgd"
+
+//===============================
+// Weapon and Powerup Definitions
+//===============================
+
+//Define a Weapon BaseClass
+@BaseClass color(0 0 200) base(Targetname, Angles) = Weapon []
+
+//Define an item BaseClass
+@BaseClass color(0 0 200) base(Targetname, Angles, Shadow) = Item
+[
+	output OnPlayerTouch(void) : "Fires when the player touches this object"
+]
+
+// The discus weapon that uses the defined Weapon BaseClass
+@PointClass base(Weapon) = weapon_disc : "Ricochet Disc" []
+
+// The powerup which will choose a random powerup on when it respawns
+@PointClass base(Item) studioprop("models/powerup.mdl") = item_powerup : "Ricochet Powerup" 
+[
+	respawntime(float) : "Respawn Time"
+	probfast(float) : "Probability of fast powerup spawning based on the total of all probabilites."
+	probslow(float) : "Probability of slow powerup spawning based on the total of all probabilites."
+	probgrav(float) : "Probability of gravity powerup spawning based on the total of all probabilites."
+	probtriple(float) : "Probability of triple shot powerup spawning based on the total of all probabilites."
+	probpower(float) : "Probability of power powerup spawning based on the total of all probabilites."
+	probfreeze(float) : "Probability of freeze powerup spawning based on the total of all probabilites."
+]
+
+//===============================
+// Trigger Definitions
+//===============================
+//note: Trigger BaseClass defined
+//	in base.fgd
+
+
+
+@SolidClass base(Trigger)  = trigger_jump : "Triggers a Player Jump"
+[
+	target(string)	: "Jump End Location (info_target)"
+	height(float) : "Height of Jump Arc"
+	//FGD v0.1b - Added ispyramid to aleviate pyramid issues. When a jumppad is defined as a pyramid
+	//then it will not perform the check for the player touching the ground.
+	ispyramid(choices) : "Is Pyramid?" : 0 =
+	[
+		0 : "Non-Pyramid"
+		1 : "Pyramid Jumppad"
+	]
+	//FGD v0.1a - Removed angle(angles) as no longer needed (RomeoJGuy)
+]
+
+@SolidClass base(Trigger) = trigger_fall : "Trigger Fall Camera" []
+
+@SolidClass base(Trigger) = trigger_discreturn : "Ricochet Disc Return" []
+
+//===============================
+// Misc. Pointclass Definitions
+//===============================
+
+@PointClass base(Targetname, Angles) iconsprite("editor/info_target.vmt") = info_ricochet : "Ricochet" []
+
+@PointClass base(PlayerClass, Angles) studio("models/editor/playerstart.mdl") = info_player_deathmatch :
+	"This entity indicates the position and facing direction at which the player will spawn during a deathmatch map. Any number of "+
+	"info_player_deathmatch entities may be placed in a map."
+[
+]
+
+@PointClass base(Targetname, Angles) studioprop("editor/info_target.vmt") = info_tutorial_proxy : "Tutorial Proxy"
+[
+	input DisableWeapon(void) : "Disable Weapon Firing"
+	input EnableWeapon(void) : "Enable Weapon Firing"
+	input DisableMovement(void) : "Disable Movement"
+	input EnableMovement(void) : "Enable Movement"
+]
+
+@PointClass base(Targetname, Angles) studioprop("models/editor/camera.mdl") = info_player_spectator : "Spectator Location" []
+
+
+

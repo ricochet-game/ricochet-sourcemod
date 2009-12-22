@@ -1,0 +1,5 @@
+INFORMATION:
+- Base contains hl2 stuff
+- 01e contains RS related stuff, e is the latest version
+
+Check www.ricochet-source.com for updates.
