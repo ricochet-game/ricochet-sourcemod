@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "18"
+	"mapversion" "19"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "18"
+	"mapversion" "19"
 	"classname" "worldspawn"
 	"skyname" "sky_rico_space_02"
 	"maxpropscreenwidth" "-1"
@@ -2276,7 +2276,7 @@ entity
 	"id" "1970"
 	"classname" "info_player_deathmatch"
 	"angles" "0 120 0"
-	"origin" "2139.73 -2.79855 85"
+	"origin" "2141 -2.79855 80"
 	editor
 	{
 		"color" "0 255 0"
@@ -3432,14 +3432,14 @@ entity
 	"classname" "trigger_fall"
 	"StartDisabled" "0"
 	"spawnflags" "1"
-	"origin" "1024 528 -2448"
+	"origin" "1024 528 -720"
 	solid
 	{
 		"id" "2533"
 		side
 		{
 			"id" "408"
-			"plane" "(-512 -480 -2432) (-512 1536 -2432) (2560 1536 -2432)"
+			"plane" "(-512 -480 -704) (-512 1536 -704) (2560 1536 -704)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -3450,7 +3450,7 @@ entity
 		side
 		{
 			"id" "407"
-			"plane" "(-512 1536 -2464) (-512 -480 -2464) (2560 -480 -2464)"
+			"plane" "(-512 1536 -736) (-512 -480 -736) (2560 -480 -736)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -3461,7 +3461,7 @@ entity
 		side
 		{
 			"id" "406"
-			"plane" "(-512 -480 -2464) (-512 1536 -2464) (-512 1536 -2432)"
+			"plane" "(-512 -480 -736) (-512 1536 -736) (-512 1536 -704)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3472,7 +3472,7 @@ entity
 		side
 		{
 			"id" "405"
-			"plane" "(2560 1536 -2464) (2560 -480 -2464) (2560 -480 -2432)"
+			"plane" "(2560 1536 -736) (2560 -480 -736) (2560 -480 -704)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3483,7 +3483,7 @@ entity
 		side
 		{
 			"id" "404"
-			"plane" "(-512 1536 -2464) (2560 1536 -2464) (2560 1536 -2432)"
+			"plane" "(-512 1536 -736) (2560 1536 -736) (2560 1536 -704)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -3494,7 +3494,7 @@ entity
 		side
 		{
 			"id" "403"
-			"plane" "(2560 -480 -2464) (-512 -480 -2464) (-512 -480 -2432)"
+			"plane" "(2560 -480 -736) (-512 -480 -736) (-512 -480 -704)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -7282,79 +7282,10 @@ entity
 }
 entity
 {
-	"id" "4830"
-	"classname" "env_cubemap"
-	"origin" "-32 0 160"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 12000]"
-	}
-}
-entity
-{
-	"id" "4836"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "1056 0 160"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 12000]"
-	}
-}
-entity
-{
 	"id" "4842"
 	"classname" "env_cubemap"
 	"sides" ""
-	"origin" "2144 0 160"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 12000]"
-	}
-}
-entity
-{
-	"id" "4848"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "2144 1088 160"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 12000]"
-	}
-}
-entity
-{
-	"id" "4854"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "1056 1088 160"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 12000]"
-	}
-}
-entity
-{
-	"id" "4863"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "-32 1088 160"
+	"origin" "2140 0 130"
 	editor
 	{
 		"color" "0 0 255"
@@ -7369,7 +7300,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "392 512 192"
+	"origin" "392 512 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7384,7 +7315,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "512 632 192"
+	"origin" "512 632 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7399,7 +7330,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "632 512 192"
+	"origin" "632 512 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7414,7 +7345,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "512 392 192"
+	"origin" "512 392 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7429,7 +7360,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "1512 512 192"
+	"origin" "1512 512 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7444,7 +7375,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "1632 632 192"
+	"origin" "1632 632 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7459,7 +7390,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "1752 512 192"
+	"origin" "1752 512 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7474,7 +7405,7 @@ entity
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
 	"sides" ""
-	"origin" "1632 392 192"
+	"origin" "1632 392 210"
 	editor
 	{
 		"color" "0 0 255"
@@ -7485,9 +7416,10 @@ entity
 }
 entity
 {
-	"id" "4960"
+	"id" "4963"
 	"classname" "env_cubemap"
-	"origin" "512 512 384"
+	"sides" ""
+	"origin" "1633 512 389"
 	editor
 	{
 		"color" "0 0 255"
@@ -7498,10 +7430,79 @@ entity
 }
 entity
 {
-	"id" "4963"
+	"id" "5217"
 	"classname" "env_cubemap"
 	"sides" ""
-	"origin" "1632 512 384"
+	"origin" "2148 1092 130"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 12000]"
+	}
+}
+entity
+{
+	"id" "5223"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "1058 1092 130"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 12000]"
+	}
+}
+entity
+{
+	"id" "5229"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-33 1091 130"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 12000]"
+	}
+}
+entity
+{
+	"id" "5235"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-33 0 130"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 12000]"
+	}
+}
+entity
+{
+	"id" "5241"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "1056 0 130"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 12000]"
+	}
+}
+entity
+{
+	"id" "4960"
+	"classname" "env_cubemap"
+	"origin" "513 512 388"
 	editor
 	{
 		"color" "0 0 255"
