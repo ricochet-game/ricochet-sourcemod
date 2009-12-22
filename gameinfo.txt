@@ -1,12 +1,12 @@
 "GameInfo"
 {
-	game	"Ricochet: Source [REL]"
+	game	"Ricochet: Source a1.1"
  	// LozH: Updated font for SupportWiki release. Don't touch this. 
 	title	"#$%O%()*: SOURCE"
 
 	type multiplayer_only
-	"developer"	"Ricochet: Source"
-	"developer_url"	"http://www.ricochet-source.com"
+	"developer"	"Ricogras Studios"
+	"developer_url"	"http://www.moddb.com/mods/ricochet-source"
 	"icon"		"resource/icon"
 	"manual"	"http://www.ricochet-source.com/manual"
 	hidden_maps
