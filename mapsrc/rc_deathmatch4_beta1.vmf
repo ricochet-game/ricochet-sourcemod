@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "8"
+	"mapversion" "9"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "8"
+	"mapversion" "9"
 	"classname" "worldspawn"
 	"skyname" "sky_rico_space_02"
 	"maxpropscreenwidth" "-1"
@@ -6449,7 +6449,7 @@ entity
 	"probtriple" ".25"
 	"probpower" "0"
 	"probfreeze" "0"
-	"origin" "0 0 1344"
+	"origin" "0 0 1471"
 	editor
 	{
 		"color" "0 0 200"
