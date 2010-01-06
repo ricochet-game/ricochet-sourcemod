@@ -1,4 +1,9 @@
 "vertexlitgeneric"
 {
 	"$baseTexture" "models/deflector"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/deflector_normal"
+	"$envmap" "env_cubemap"
+	"$Selfillum" "1"
+	"$envmapsaturation" 1
 }
