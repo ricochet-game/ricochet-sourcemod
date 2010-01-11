@@ -992,7 +992,7 @@
 	PSName(string) : "Particle System Entity" : "" : "Set this to the name of the env_smokestack that you want this light to affect."
 ]
 
-@PointClass base(Angles) color(255 0 0) = env_sun : 
+@PointClass base(Angles) iconsprite("editor/rs_envsun.vmt") = env_sun : 
 	"An entity to control & draw a sun effect in the sky."
 [
 	target(target_destination) : "Viewer entity" : : "Name of an entity used to determine where the sun is in the skybox. The sun should be lined up on a line from this entity to the env_sun entity."
@@ -1065,7 +1065,7 @@
 	]
 ]
 
-@PointClass base(Parentname, Angles) color(255 255 255) = env_smokestack : 
+@PointClass base(Parentname, Angles) iconsprite("editor/rs_smokestack") = env_smokestack : 
 	"An entity that spits out a constant stream of smoke. See particlezoo.vmf for sample usage. You can place up to two env_particlelight entities near the smoke stack to add ambient light to its particles."
 [
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
@@ -2104,7 +2104,7 @@
 	output OnGustEnd(void) : "Fired when a wind gust ends."
 ]
 
-@PointClass base(Angles) size(-16 -16 -16, 16 16 16) color(0 0 255) = sky_camera : 
+@PointClass base(Angles) size(-16 -16 -16, 16 16 16) color(255 53 0) = sky_camera : 
 	"An entity used to control the 3D Skybox. Its origin is used to determine the 3D Skybox's position relative to the map. Place this entity, in the 3D Skybox, at the point where the origin of the map should be."
 [
 	scale(integer) : "3D Skybox scale" : 16 : "Scale of the skybox."
