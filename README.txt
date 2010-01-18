@@ -1,33 +1,64 @@
-Hi there! Thanks for downloading Ricochet: Source. *Requires Source SDK Base and Half Life 2 to play *
+Ricochet: Source README
 
-***THIS IS AN ALPHA. EXPECT BUGS. REPORT BUGS TO WEBSITE***
+----------------------------------------------------
+REQUIREMENTS
+----------------------------------------------------
 
-This version is: 12.11.2007.1a
+To play Ricochet: Source, you will need-
+-A computer capable of modern graphics. This game utilizes normal maps(DX9) but will revert to DX8 if you can't support it.
+-A DSL or greater internet connection.
+-Valve Software's Steam platform, with the Source SDK Base and HL2 installed.
 
-Version LOG (public versions):=
+----------------------------------------------------
+VERSION HISTORY
+----------------------------------------------------
 
-- 12.11.2007.1a
-
-Inital Release. Comes with basic functions, models and maps. 
-
-==========
-
-All public versions go through Pre-publication evaluation
-(http://developer.valvesoftware.com/wiki/Pre-publication_evaluation)
-
-All excess files should be removed.
-
--LozH
-
-==========
-
-Maps shipped with this version:
-
-rc_deathmatch1
-rc_deathmatch2
-rc_skyarena_TEST
+Alpha 1.1 (01/20/10)
+	-New Dev Team
+	-New Pyramid model and textures
+	-New Power Up textures
+	-New Deflector model and textures
+	-rc_deathmatch1
+	-rc_deathmatch3
+	-rc_deathmatch4
+	-rc_flip_deathmatch
+	-Many fatal error bugs fixed
+	-Deleted old models and textures that are no longer used
+	-Fixed mat_fullbright issue
+	-Bot support
 
 
-===========
+Alpha 1 (12/11/07)
+	-Initial release
+	-Platform Model completed
+	-2 Skyboxes
+	-1 functional map
+	-Most source code completed
 
-Check for updates at www.ricochet-source.com
+----------------------------------------------------
+KNOWN ISSUES
+----------------------------------------------------
+-HUD errors with powerups
+-Freeze and slow down powerups don't work
+
+----------------------------------------------------
+CREDITS
+----------------------------------------------------
+Development Team-
+  Lohz: Original developer
+  Young: Project Lead, 3D Lead, 2D Lead
+  Miniati: Level Design Lead, Tester
+  Lander: Tester
+  B. Klein: Level Design, Tester
+  M. Klein: Concept Art, Tester
+  Crisp: Tester
+  Durr: Tester
+
+
+Contributions-
+  SammyServers: Server Hosting
+  All Past members who are un-credited
+
+*********************************************
+||http://www.moddb.com/mods/ricochet-source||
+*********************************************
