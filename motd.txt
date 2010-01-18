@@ -4,11 +4,17 @@
 <div style="width: 70%; margin: 0px auto; border: 5px solid #37689F; background-color: #000; padding: 10px; font-size: 12px; font-family: Courier; margin-top: 30px; color: #4B7CB3; text-align: left;">
 
 <div style="font-size: 30px; font-family: Courier; width: 635; margin-bottom: 20px; height:122">
-<center> This is Ricochet: Source<br/><br/>
-**Alpha Version. Expect Bugs.**<br/>
-***Report ALL Bugs!***<br/><br/>
-<b>****NOTE: Set your disc color on the following screen!!****<br/>
-www.ricochet-source.com
+<center>
+   <p>Ricochet: Source a1.1</p>
+   <p><br/>
+     -Updated models and textures<br>
+     -3 New maps<br>
+     -Fixed many bugs</p>
+   <p>&nbsp;</p>
+   <p>*This is still alpha, all content isn't complete, please report any problems to the moddb page*<br/>
+     <br/>
+          <b><br/>
+     www.moddb.com/mods/ricochet-source </p>
 </center></div>
 </div>
 </div>
