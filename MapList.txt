@@ -1,4 +1,0 @@
-rc_deathmatch1
-rc_deathmatch3
-rc_deathmatch4
-rc_flip_deathmatch
