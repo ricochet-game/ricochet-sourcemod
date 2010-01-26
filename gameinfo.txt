@@ -1,6 +1,6 @@
 "GameInfo"
 {
-	game	"Ricochet: Source a1.1"
+	game	"Ricochet: Source a1.2"
  	// LozH: Updated font for SupportWiki release. Don't touch this. 
 	title	"#$%O%()*: SOURCE"
 
