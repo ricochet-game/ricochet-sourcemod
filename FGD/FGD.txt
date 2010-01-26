@@ -1,5 +1,6 @@
 INFORMATION:
 - Base contains hl2 stuff
 - 01e contains RS related stuff, e is the latest version
+- FGD now contains special textures for hammer entities(*Updated by Young*)
 
-Check www.ricochet-source.com for updates.
+Check http://www.moddb.com/mods/ricochet-source for updates.
