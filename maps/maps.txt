@@ -1,3 +1,11 @@
+Alpha 1.1 ships with:
+rc_deathmatch 1 - Finished
+rc_deathmatch 2 - Finished
+rc_deathmatch 3 - Finished
+rc_deathmatch 4 - Finished
+rc_flip_deathmatch - Finished
+
+
 Our first version (12.11.2007.1a) ships withs enabled 3 maps.
 
 rc_deathmatch 1 - finished
