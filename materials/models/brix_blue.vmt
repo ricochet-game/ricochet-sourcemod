@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/brix_blue"
+	"$selfillum" 1
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/brix_normal"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+}
