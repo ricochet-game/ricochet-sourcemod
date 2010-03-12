@@ -1,3 +1,0 @@
-media/rsbackground.mp3
-
-//Warning: An MP3 will not play correctly if it does not have a 44100 Hz playback rate.
