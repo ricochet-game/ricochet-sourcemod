@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models\props_ricochet\skybox\plane3t"
+	"$nofog" "1"
+	"$translucent" 1
+}
