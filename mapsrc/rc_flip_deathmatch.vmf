@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "87"
+	"mapversion" "88"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "87"
+	"mapversion" "88"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -12058,7 +12058,7 @@ entity
 entity
 {
 	"id" "398"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 45 0"
 	"skin" "1"
 	"fademindist" "0.0"
@@ -12066,10 +12066,19 @@ entity
 	"solid" "6"
 	"model" "models/props_ricochet/bricks.mdl"
 	"fadescale" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"MinAnimTime" "5"
+	"MaxAnimTime" "10"
+	"SetBodyGroup" "0"
+	"StartDisabled" "0"
 	"origin" "-0.0403175 64.1632 11"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -14268]"
@@ -12078,7 +12087,7 @@ entity
 entity
 {
 	"id" "399"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 225 0"
 	"skin" "2"
 	"fademindist" "0.0"
@@ -12086,10 +12095,19 @@ entity
 	"solid" "6"
 	"model" "models/props_ricochet/bricks.mdl"
 	"fadescale" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"MinAnimTime" "5"
+	"MaxAnimTime" "10"
+	"SetBodyGroup" "0"
+	"StartDisabled" "0"
 	"origin" "-0.394077 -64.0974 11"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -13768]"
@@ -12392,8 +12410,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-189.238 -38.635 218.999]"
-		"look" "[386.727 121.008 -394.247]"
+		"position" "[-126.015 -21.1112 133.024]"
+		"look" "[349.683 110.74 -566.703]"
 	}
 }
 cordon
