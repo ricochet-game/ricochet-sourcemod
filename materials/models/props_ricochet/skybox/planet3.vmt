@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "models\props_ricochet\skybox\plane3"
+	"$basetexture" "models\props_ricochet\skybox\planet3"
 	"$nofog" "1"
 	"$translucent" 1
 }
