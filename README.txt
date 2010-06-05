@@ -1,4 +1,4 @@
-Ricochet: Source README2
+Ricochet: Source README
 
 ----------------------------------------------------
 REQUIREMENTS
