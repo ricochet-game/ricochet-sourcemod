@@ -45,19 +45,24 @@ KNOWN ISSUES
 CREDITS
 ----------------------------------------------------
 Development Team-
-  Lohz: Original developer
-  Young: Project Lead, 3D Lead, 2D Lead
-  Miniati: Level Design Lead, Tester
-  Lander: Tester
-  B. Klein: Level Design, Tester
-  M. Klein: Concept Art, Tester
-  Crisp: Tester
-  Durr: Tester
+  Christopher Young: Project Lead, 3D Lead, 2D Lead
+  Dylan Miniati: Level Design Lead, Tester
+  Eugene Lander: Tester
+  Brandon Klein: Level Design, Tester
+  Michael Klein: Concept Art, Tester
+  Brian "Crisp" Lazowski: Tester
+  John Durr: Tester
 
 
 Contributions-
   SammyServers: Server Hosting
-  All Past members who are un-credited
+  Laurence "LozH" Herbert : Leading
+  Jimmy "denzil" Headdon : Planning, Development and Assets
+  Chris "RomeoJGuy" Harris : Code
+  Bill "jb55" Casarin : Code
+  Jesse "SideEffect" LeBlanc : Modeling
+  Kai "SkaveRat" de Haan : Mapping
+  Brittany "Pezzle" Pezzillo : Concept Art
 
 *********************************************
 ||http://www.moddb.com/mods/ricochet-source||
