@@ -1,4 +1,8 @@
 "vertexlitgeneric"
 {
 	"$baseTexture" "models/disc"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/disc_normal"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
 }
