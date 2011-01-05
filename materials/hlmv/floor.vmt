@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "hlmv/floor"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "hlmv/floor_normal"
+	"$envmap" "env_cubemap"
+	"$Selfillum" "1"
+	"$envmapsaturation" 1
+}
