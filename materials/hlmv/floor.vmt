@@ -1,9 +1,14 @@
-"UnlitGeneric"
+"VertexLitGeneric"
 {
 	"$baseTexture" "hlmv/floor"
 	"$normalmapalphaenvmapmask" 1
 	"$bumpmap" "hlmv/floor_normal"
-	"$envmap" "env_cubemap"
-	"$Selfillum" "1"
-	"$envmapsaturation" 1
+	"$phong" "1"
+	"$phongexponent" "33"
+	"$phongboost"	"6"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+
+//	"$envmap" "env_cubemap"
+//	"$Selfillum" "1"
+//	"$envmapsaturation" 1
 }
