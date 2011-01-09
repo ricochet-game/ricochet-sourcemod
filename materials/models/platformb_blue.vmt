@@ -1,6 +1,7 @@
 "vertexlitgeneric"
 {
 	"$baseTexture" "models/platformb_blue"
+	"$selfillum" 1
 	"$normalmapalphaenvmapmask" 1
 	"$bumpmap" "models/platformb_normal"
 	"$envmap" "env_cubemap"

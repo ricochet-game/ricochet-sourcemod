@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4037"
-	"mapversion" "119"
+	"mapversion" "123"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "0"
-	"mapversion" "119"
+	"mapversion" "123"
 	"classname" "worldspawn"
 	"skyname" "sky_rico_space_02"
 	"sounds" "1"
@@ -515,7 +515,7 @@ world
 		{
 			"id" "1340"
 			"plane" "(-3742 552 354) (-3742 552 -162) (-4258 552 -162)"
-			"material" "MODELS/PROPS_RICOCHET/SKYBOX/PLANET3"
+			"material" "MODELS/PROPS_RICOCHET/SKYBOX/PLANET4"
 			"uaxis" "[1 0 0 320] 0.5"
 			"vaxis" "[0 0 -1 704] 0.5"
 			"rotation" "0"
@@ -551,82 +551,6 @@ world
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 -1 0 0] 0.25"
 			"vaxis" "[-1 0 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 127 120"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
-		"id" "3716"
-		side
-		{
-			"id" "1354"
-			"plane" "(-2707 -519.25 456.75) (-2707 -519.25 263.25) (-2701 -519.25 263.25)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1353"
-			"plane" "(-2701 -712.75 456.75) (-2701 -712.75 263.25) (-2707 -712.75 263.25)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1352"
-			"plane" "(-2707 -712.75 456.75) (-2707 -712.75 263.25) (-2707 -519.25 263.25)"
-			"material" "MODELS/PROPS_RICOCHET/SKYBOX/PLANET"
-			"uaxis" "[0 1 0 699.866] 0.188965"
-			"vaxis" "[0 0 -1 369.116] 0.188965"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1351"
-			"plane" "(-2701 -519.25 456.75) (-2701 -519.25 263.25) (-2701 -712.75 263.25)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1350"
-			"plane" "(-2701 -519.25 263.25) (-2707 -519.25 263.25) (-2707 -712.75 263.25)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1349"
-			"plane" "(-2707 -519.25 456.75) (-2701 -519.25 456.75) (-2701 -712.75 456.75)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1453,93 +1377,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -5768]"
-	}
-}
-entity
-{
-	"id" "3342"
-	"classname" "env_sun"
-	"overlaymaterial" "sprites/light_glow02_add_noz.spr"
-	"material" "sprites/orangecore2"
-	"overlaysize" "-1"
-	"size" "16"
-	"overlaycolor" "0 0 0"
-	"pitch" "-55"
-	"use_angles" "1"
-	"HDRColorScale" "1.0"
-	"rendercolor" "4 187 187"
-	"angles" "0 229 0"
-	"origin" "-3816 648 312"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -5268]"
-	}
-}
-entity
-{
-	"id" "3344"
-	"classname" "prop_dynamic"
-	"StartDisabled" "0"
-	"fadescale" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"SetBodyGroup" "0"
-	"MaxAnimTime" "10"
-	"MinAnimTime" "5"
-	"RandomAnimation" "0"
-	"solid" "6"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"pressuredelay" "0"
-	"PerformanceMode" "0"
-	"ExplodeRadius" "0"
-	"ExplodeDamage" "0"
-	"disableshadows" "0"
-	"skin" "0"
-	"model" "models/props_ricochet/skybox/atmosphere.mdl"
-	"angles" "0 270 0"
-	"origin" "-4000 552 94"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -9768]"
-	}
-}
-entity
-{
-	"id" "3346"
-	"classname" "prop_dynamic"
-	"StartDisabled" "0"
-	"fadescale" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"SetBodyGroup" "0"
-	"MaxAnimTime" "10"
-	"MinAnimTime" "5"
-	"RandomAnimation" "0"
-	"solid" "6"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"pressuredelay" "0"
-	"PerformanceMode" "0"
-	"ExplodeRadius" "0"
-	"ExplodeDamage" "0"
-	"disableshadows" "0"
-	"skin" "0"
-	"model" "models/props_ricochet/skybox/atmosphere_b.mdl"
-	"angles" "0 270 0"
-	"origin" "-4000 552 94"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -9268]"
 	}
 }
 entity
@@ -17133,13 +16970,45 @@ entity
 		"logicalpos" "[0 500]"
 	}
 }
+entity
+{
+	"id" "3346"
+	"classname" "prop_dynamic"
+	"StartDisabled" "0"
+	"fadescale" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"SetBodyGroup" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"RandomAnimation" "0"
+	"solid" "6"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"pressuredelay" "0"
+	"PerformanceMode" "0"
+	"ExplodeRadius" "0"
+	"ExplodeDamage" "0"
+	"disableshadows" "0"
+	"skin" "0"
+	"model" "models/props_ricochet/skybox/atmosphere_c.mdl"
+	"angles" "0 180 0"
+	"origin" "-4000 550 94"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -9268]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-4176.52 -237.811 497.003]"
-		"look" "[-3856.11 -390.454 373.051]"
+		"position" "[-373.979 -205.112 1328.51]"
+		"look" "[-70.3213 -171.601 1109.42]"
 	}
 }
 cordon
