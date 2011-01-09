@@ -17,12 +17,12 @@
 //
 // Will your mod be team based?
 // define SDK_USE_TEAMS
-#define SDK_USE_TEAMS
+//#define SDK_USE_TEAMS
 
 //
 // Do you use player classes?
 // define SDK_USE_PLAYERCLASSES
-#define SDK_USE_PLAYERCLASSES
+//#define SDK_USE_PLAYERCLASSES
 
 //================================
 // PLAYER MOVEMENT RELATED OPTIONS
@@ -31,17 +31,17 @@
 //
 // Do your players have stamina? - this is a pre-requisite for sprinting, if you define sprinting, and don't uncomment this, it will be included anyway.
 // define SDK_USE_STAMINA
-#define SDK_USE_STAMINA
+//#define SDK_USE_STAMINA
 
 //
 // Are your players able to sprint?
 // define SDK_USE_SPRINTING
-#define SDK_USE_SPRINTING
+//#define SDK_USE_SPRINTING
 
 //Tony; stamina is a pre-requisite to sprinting, if you don't declare stamina but you do declare sprinting
 //stamina needs to be included.
 #if defined ( SDK_USE_SPRINTING ) && !defined( SDK_USE_STAMINA )
-#define SDK_USE_STAMINA
+//#define SDK_USE_STAMINA
 #endif
 
 //
@@ -149,7 +149,7 @@ typedef enum
 	SDK_WEAPON_GRENADE,
 	SDK_WEAPON_PISTOL,
 	SDK_WEAPON_CROWBAR,
-
+	SDK_WEAPON_DISC,
 	
 	WEAPON_MAX,		// number of weapons weapon index
 } SDKWeaponID;

@@ -51,6 +51,8 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build</CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build</CustomBuildAfterTargets>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -60,7 +62,7 @@
     <CustomBuildStep>
       <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
       <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll"
-copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
+copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
 </Command>
       <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\client.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -139,9 +141,9 @@ copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
     <CustomBuildStep>
       <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
       <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll"
-copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
+copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
 if exist "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb"
-if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb"
+if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb" /Y
 </Command>
       <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\client.dll;c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -216,6 +218,7 @@ if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "c:\steam\steama
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\shared\sdk\weapon_disc.cpp" />
     <ClCompile Include="achievement_notification_panel.cpp" />
     <ClCompile Include="..\shared\achievement_saverestore.cpp" />
     <ClCompile Include="..\shared\achievementmgr.cpp" />
@@ -597,6 +600,7 @@ if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "c:\steam\steama
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="sdk\c_weapon_disc.cpp" />
     <ClCompile Include="simple_keys.cpp" />
     <ClCompile Include="..\..\public\simple_physics.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

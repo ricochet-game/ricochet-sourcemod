@@ -49,6 +49,8 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build</CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build</CustomBuildAfterTargets>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -58,7 +60,7 @@
     <CustomBuildStep>
       <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
       <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
-if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
+if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" /Y
 </Command>
       <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\server.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -136,9 +138,9 @@ if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steama
     <CustomBuildStep>
       <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
       <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
-if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
+if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" /Y
 if exist c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb"
-if exist "$(TargetDir)"server.pdb copy "$(TargetDir)"server.pdb "c:\steam\steamapps\SourceMods\ricochet\bin"
+if exist "$(TargetDir)"server.pdb copy "$(TargetDir)"server.pdb "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
 </Command>
       <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\server.dll;c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -216,6 +218,7 @@ if exist "$(TargetDir)"server.pdb copy "$(TargetDir)"server.pdb "c:\steam\steama
     <ClCompile Include="..\shared\achievementmgr.cpp" />
     <ClCompile Include="..\shared\achievements_hlx.cpp" />
     <ClCompile Include="..\shared\activitylist.cpp" />
+    <ClCompile Include="..\shared\sdk\weapon_disc.cpp" />
     <ClCompile Include="ai_activity.cpp" />
     <ClCompile Include="ai_baseactor.cpp" />
     <ClCompile Include="ai_basehumanoid.cpp" />

@@ -306,19 +306,10 @@ void CSDKPlayer::Precache()
 //Tony; this is where default items go when not using playerclasses!
 void CSDKPlayer::GiveDefaultItems()
 {
-#if !defined ( SDK_USE_PLAYERCLASSES )
-	if ( State_Get() == STATE_ACTIVE )
+#if !defined(SDK_USE_PLAYERCLASSES)
+	if (State_Get() == STATE_ACTIVE)
 	{
-		CBasePlayer::GiveAmmo( 30,	"pistol");
-		CBasePlayer::GiveAmmo( 30,	"mp5");
-		CBasePlayer::GiveAmmo( 12,	"shotgun");
-		CBasePlayer::GiveAmmo( 5,	"grenades" );
-
-		GiveNamedItem( "weapon_pistol" );
-		GiveNamedItem( "weapon_mp5" );
-		GiveNamedItem( "weapon_shotgun" );
-		GiveNamedItem( "weapon_crowbar" );
-		GiveNamedItem( "weapon_grenade" );
+		GiveNamedItem("weapon_disc");
 	}
 #endif
 }
