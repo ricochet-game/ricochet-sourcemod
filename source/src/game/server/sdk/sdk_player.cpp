@@ -724,7 +724,7 @@ int CSDKPlayer::OnTakeDamage_Alive( const CTakeDamageInfo &info )
 
 void CSDKPlayer::Event_Killed( const CTakeDamageInfo &info )
 {
-	ThrowActiveWeapon();
+	//ThrowActiveWeapon();
 
 	// show killer in death cam mode
 	// chopped down version of SetObserverTarget without the team check

@@ -49,8 +49,10 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
-    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build</CustomBuildAfterTargets>
-    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build</CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    </CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    </CustomBuildAfterTargets>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -58,11 +60,12 @@
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
-      <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
-if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" /Y
-</Command>
-      <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\server.dll;%(Outputs)</Outputs>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <ClCompile>
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
@@ -126,8 +129,9 @@ if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steama
       <OutputFile>$(OutDir)Server.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>del /F "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
+copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -136,13 +140,12 @@ if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steama
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
-      <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
-if exist "$(TargetDir)"server.dll copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll" /Y
-if exist c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb"
-if exist "$(TargetDir)"server.pdb copy "$(TargetDir)"server.pdb "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
-</Command>
-      <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\server.dll;c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb;%(Outputs)</Outputs>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -209,8 +212,12 @@ if exist "$(TargetDir)"server.pdb copy "$(TargetDir)"server.pdb "c:\steam\steama
       <OutputFile>$(OutDir)Server.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>del /F "c:\steam\steamapps\SourceMods\ricochet\bin\server.dll"
+copy "$(TargetDir)"server.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
+
+del /F "c:\steam\steamapps\SourceMods\ricochet\bin\server.pdb"
+copy "$(TargetDir)"server.pdb "c:\steam\steamapps\SourceMods\ricochet\bin"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -628,6 +635,8 @@ if exist "$(TargetDir)"server.pdb copy "$(TargetDir)"server.pdb "c:\steam\steama
     </ClCompile>
     <ClCompile Include="scripted.cpp" />
     <ClCompile Include="scriptedtarget.cpp" />
+    <ClCompile Include="sdk\Entities\TriggerFall.cpp" />
+    <ClCompile Include="sdk\Entities\TriggerJump.cpp" />
     <ClCompile Include="sendproxy.cpp" />
     <ClCompile Include="..\shared\sequence_Transitioner.cpp" />
     <ClCompile Include="..\..\public\server_class.cpp">

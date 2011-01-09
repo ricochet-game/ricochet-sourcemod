@@ -489,8 +489,9 @@ Vector DropToGround(
 					const Vector &vMaxs )
 {
 	trace_t trace;
-	UTIL_TraceHull( vPos, vPos + Vector( 0, 0, -500 ), vMins, vMaxs, MASK_SOLID, pMainEnt, COLLISION_GROUP_NONE, &trace );
-	return trace.endpos;
+	auto endpoint = vPos + Vector( 0, 0, -500 );
+	UTIL_TraceHull( vPos, endpoint, vMins, vMaxs, MASK_SOLID, pMainEnt, COLLISION_GROUP_NONE, &trace );
+	return trace.endpos == endpoint ? vPos : trace.endpos;
 }
 
 

@@ -51,8 +51,10 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
-    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build</CustomBuildAfterTargets>
-    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build</CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    </CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    </CustomBuildAfterTargets>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -60,11 +62,12 @@
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
-      <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll"
-copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
-</Command>
-      <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\client.dll;%(Outputs)</Outputs>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <ClCompile>
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
@@ -129,8 +132,9 @@ copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
       <OutputFile>$(OutDir)Client.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>del /F "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll"
+copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -139,13 +143,12 @@ copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Message>Copying to c:\steam\steamapps\SourceMods\ricochet\bin\</Message>
-      <Command>if exist "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll"
-copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin" /Y
-if exist "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb" attrib -r "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb"
-if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb" /Y
-</Command>
-      <Outputs>c:\steam\steamapps\SourceMods\ricochet\bin\client.dll;c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb;%(Outputs)</Outputs>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -213,8 +216,12 @@ if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "c:\steam\steama
       <OutputFile>$(OutDir)Client.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>del /F "c:\steam\steamapps\SourceMods\ricochet\bin\client.dll"
+copy "$(TargetDir)"client.dll "c:\steam\steamapps\SourceMods\ricochet\bin"
+
+del /F "c:\steam\steamapps\SourceMods\ricochet\bin\client.pdb"
+copy "$(TargetDir)"client.pdb "c:\steam\steamapps\SourceMods\ricochet\bin"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

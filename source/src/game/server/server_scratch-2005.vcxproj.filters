@@ -40,6 +40,9 @@
     <Filter Include="Tools Framework">
       <UniqueIdentifier>{5ac83c98-6c2a-40b5-aa97-225199809ff5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SDK\Entities">
+      <UniqueIdentifier>{47c9c0b0-8e21-4456-9c08-68d133bcbd4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\shared\achievement_saverestore.cpp">
@@ -1406,6 +1409,12 @@
     </ClCompile>
     <ClCompile Include="..\shared\sdk\weapon_disc.cpp">
       <Filter>Source Files\SDK\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Entities\TriggerJump.cpp">
+      <Filter>Source Files\SDK\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Entities\TriggerFall.cpp">
+      <Filter>Source Files\SDK\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
