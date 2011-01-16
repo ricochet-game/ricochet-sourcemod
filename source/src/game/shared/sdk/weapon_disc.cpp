@@ -146,7 +146,7 @@ bool CDiscProjectile::CreateSprites( void )
 	{
 		m_pGlowSprite->FollowEntity( this );
 		m_pGlowSprite->SetTransparency( kRenderGlow, 255, 255, 255, 128, kRenderFxNoDissipation );
-		m_pGlowSprite->SetScale( 0.2f );
+		m_pGlowSprite->SetScale( 2.0f );
 		m_pGlowSprite->TurnOff();
 	}
 
@@ -583,6 +583,8 @@ void CWeaponDisc::FireBolt( void )
 #ifndef CLIENT_DLL
 	Vector vecAiming	= pOwner->GetAutoaimVector( 0 );	
 	Vector vecSrc		= pOwner->Weapon_ShootPosition();
+
+	vecAiming.z = 0.0f; // Players can only shoot discs horizontally
 
 	QAngle angAiming;
 	VectorAngles( vecAiming, angAiming );
