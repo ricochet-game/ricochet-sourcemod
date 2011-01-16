@@ -1,7 +1,7 @@
 #include "cbase.h"
 #include "triggers.h"
 
-ConVar trigger_jump_speed("trigger_jump_speed", "1");
+ConVar trigger_jump_speed("trigger_jump_speed", "800");
 
 class CTriggerJump : public CBaseTrigger
 {
@@ -53,22 +53,33 @@ void CTriggerJump::StartTouch(CBaseEntity *pOther)
 	if(pOther->IsPlayer() == true)
 	{
 		auto toTarget = m_pTarget->GetAbsOrigin() - pOther->GetAbsOrigin();
+		auto height = toTarget.z;
+		auto distance = (toTarget - Vector(0, 0, toTarget.z)).Length() + 50.0f;
+		auto speed = trigger_jump_speed.GetFloat();
+		auto gravity = cvar->FindVar("sv_gravity")->GetFloat();
 
-		toTarget = toTarget * 0.5f;
-		toTarget.z = m_fHeight * 3.0f;
+		// calculate angle
+		auto a = gravity*pow(distance, 2) + 2*height*pow(speed, 2);
+		a = pow(speed, 2) + sqrt(pow(speed, 4) - a);
+		a /= gravity * distance;
+		a = atan(a);
 
-		/*Vector out;
+		toTarget.z = 0;
+		toTarget.NormalizeInPlace();
+		auto rotVec = toTarget.Cross(Vector(0, 0, 1));
+
+		Vector vel;
 		VMatrix mat;
 		mat.Identity();
-		MatrixRotate(mat, Vector(1.0f, 0.0f, 0.0f), 30.0f);
-		VectorRotate(toTarget, mat.As3x4(), out);*/
-		
-		//VectorNormalizeFast(toTarget);
-		DevMsg("toTarget: %f %f %f\n", toTarget.x, toTarget.y, toTarget.z);
+		MatrixRotate(mat, rotVec, RAD2DEG(a));
+		VectorRotate(toTarget, mat.As3x4(), vel);
 
-		//toTarget = toTarget * trigger_jump_speed.GetFloat();
+		vel.NormalizeInPlace();
+		vel = vel * speed;
 
-		pOther->SetAbsVelocity(Vector(0, 0, 0));
-		pOther->SetBaseVelocity(toTarget * trigger_jump_speed.GetFloat());
+		DevMsg("jump vel: %f %f %f\n", vel.x, vel.y, vel.z);
+
+		pOther->SetGroundEntity(0);
+		pOther->SetBaseVelocity(vel - pOther->GetAbsVelocity());
 	}
 }
