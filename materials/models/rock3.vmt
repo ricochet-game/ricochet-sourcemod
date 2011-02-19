@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/rock3"
+	"$normalmapalphaenvmapmask" 1
+	"$bumpmap" "models/rock3_normals"
+	"$envmap" "env_cubemap"
+	"$Selfillum" "1"
+	"$envmapsaturation" 1
+}
